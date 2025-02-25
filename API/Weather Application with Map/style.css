@@ -1,0 +1,157 @@
+/* style.css */
+body {
+    background: #000000; /* Your background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    max-width: 1200px;
+    max-height: 900px;
+    gap: 20px;
+}
+
+#weather-container {
+    width: 40%;
+    height: 95%;
+    border-radius: 10px;
+    background: rgba(230, 226, 226, 0.3);
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+
+}
+
+.map-forecast-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+#map {
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hourly-forecast {
+    margin-top: 20px;
+    height: 50%;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center; 
+}
+
+
+
+h2, label, p {
+    color: #fff;
+    margin: 1px 0;
+}::placeholder
+{
+    color: #fff;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+button {
+    background: #08050a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0e0913;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically too */
+    height: 100%; /* Make each item take full height */
+    padding: 10px 0; /* Add vertical padding */
+    color: white; /* Ensure text is white */
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px; /* Increased margin */
+}.hourly-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#time-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#current-time {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 150px;
+    font-size: 16px;
+    ;}
+
